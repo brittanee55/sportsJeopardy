@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jeopardy Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jeopardy Game</h1>
+        <div id="instructions" class="instructions">
+            <h2>Instructions</h2>
+            <p>Welcome to the Jeopardy Game! Get ready to test your knowledge on a variety of sports categories...</p>
+            <button id="startGame">Start Game</button>
+        </div>
+        <div class="teams" style="display:none;">
+            <div class="team" id="teamA">
+                <h2>Team A</h2>
+                <p>Score: <span id="scoreA">0</span></p>
+                <button id="rollDiceA">Roll Dice</button>
+                <p id="diceResultA" style="font-size: 20px;"></p>
+            </div>
+            <div class="team" id="teamB">
+                <h2>Team B</h2>
+                <p>Score: <span id="scoreB">0</span></p>
+                <button id="rollDiceB">Roll Dice</button>
+                <p id="diceResultB" style="font-size: 20px;"></p>
+            </div>
+        </div>
+        <div id="board" class="board" style="display:none;"></div>
+        <div id="questionContainer" class="question-container" style="display:none;">
+            <h3 id="questionText"></h3>
+            <div id="timer">15</div>
+            <div id="answerText" style="display:none;"></div>
+            <div id="answerOptions" style="display:none;">
+                <button id="correctBtn">Correct</button>
+                <button id="incorrectBtn">Incorrect</button>
+            </div>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
